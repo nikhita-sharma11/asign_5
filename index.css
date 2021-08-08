@@ -1,0 +1,177 @@
+*
+{
+    box-sizing: border-box;
+}
+html
+{
+    background: #9CCED4;
+    background: -webkit-radial-gradient(left, #9CCED4, #267A7D);
+    background: -moz-radial-gradient(left, #9CCED4, #267A7D);
+    background: radial-gradient(to right, #9CCED4, #267A7D);
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.main
+{
+    margin: 2vmin auto 3vmin auto;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 8vmin repeat(4,minmax(30vmin,max-content));
+    grid-gap:5vmin;
+}
+.main > div
+{
+    background-color: #f1f1f1d5;
+    border-radius: .2vmin;
+    box-shadow: .1vmin .1vmin .75vmin .01vmin rgba(0, 0, 0, 0.404);
+    
+
+}
+.header 
+{
+    padding-left: 2vmin;
+    font-size: 3vmin;
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 4vmin;
+    font-weight: bold;
+    
+    
+}
+.links
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 2vmin;
+    font-weight: bold;
+    margin-left: 2vmin;
+}
+.links > div
+{
+    margin: 1.5vmin;
+    font-size: 2.4vmin;
+   
+
+}
+
+.links > div > a
+{
+    text-decoration: none;
+    color:grey;
+    transition: all .2s;
+}
+.links > div > a:hover
+{
+    text-decoration: none;
+    color:rgb(53, 53, 53);
+
+}
+.profile
+{
+    height:50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-main
+{
+    width: 90%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+}
+.profile-main > div
+{
+    width: 40%;
+    padding-top:6vmin;
+    letter-spacing: .1vmin;
+
+}
+
+.profile-main > div > h1
+{
+    font-weight: bold;
+    font-size: 7vmin;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.profile-main > div > p
+{
+    color:rgba(0, 0, 0, 0.767);
+    font-size: 2.5vmin;
+}
+
+.profile-main > div > button
+{
+    border: .2vmin solid green;
+    
+    padding: 1vmin;
+    font-size: 3vmin;
+    transition: all .25s;
+    
+}
+
+.profile-main > div > button:hover
+{
+    opacity: .4;
+}
+
+.profile-main > div > button > a
+{
+    color:green;
+    text-decoration: none;
+}
+.profile-main > div > button > a:visited
+{
+    color:green;
+    text-decoration: none;
+}
+
+.img
+{
+    height: 100%;
+    background:url('image.jpg');
+    background-repeat: no-repeat;
+    min-width: 50%;
+    background-size: contain;
+    
+}
+.about,.projects,.lang
+{
+    padding: 3vmin;
+    font-size: 3vmin;
+    letter-spacing: .05vmin;
+
+}
+.about > h1, .projects > h1, .lang > h1
+{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.projects > div,.lang > div
+{
+    margin: 2vmin;
+    border: .3vmin solid rgba(126, 126, 126, 0.596);
+    padding: 1.5vmin;
+
+}
+
+
